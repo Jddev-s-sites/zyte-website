@@ -1,0 +1,135 @@
+body {
+  color: #ffcce1;
+  font-family: 'Varela Round', sans-serif;
+  background: url(/src/svg/wave_background.svg);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+:root{
+  --color-background:#342e57;
+  --color-main: #473e7a;
+  --color-secondary: #8679d8;
+  --color-1: #2b2d31;
+  --color-2: #b6abf9;
+  --color-text-secondary: #b6abf9;
+  --color-text:#FFFFFF;
+  --color-footer: #cccccc;
+  --footer-hover: #e1dcff;
+  --font-color: #6c5bc0;
+  --border-color: #a1a1a17d;
+}
+.main{
+  color: white;
+  text-align: center;
+  padding: 1%;
+  background-color: #77777721;
+  box-shadow: 0px 10px 60px black;
+  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  max-width: 800px;
+  margin: auto;
+}
+
+.icon{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  overflow: auto;
+}
+
+.icon img{
+  border-radius: 50%;
+  float: left;
+}
+.icon p{
+  margin: 0 15px;
+  font-size: 40px;
+  float: left;
+}
+
+.header {
+  width: 90%;
+  margin: auto;
+}
+
+.text-desc{
+  font-size: 25px;
+}
+
+
+.button {
+  background-color: transparent;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  display: inline-block;
+  cursor: pointer;
+  color: var(--color-text);
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  background: var(--color-secondary);
+  position: relative;
+  margin: auto;
+  transition: 0.1s ease-in-out;
+}
+
+.button:hover {
+  color: var(--color-text);
+  background: var(--color-2);
+  text-shadow: var(--color-2);
+  border: 1px solid var(--border-color);
+}
+.button:active {
+  box-shadow: 0 0 5px var(--color-text);
+}
+.footer {
+  color: var(--color-footer);
+  margin: auto;
+}
+.footer a {
+  text-decoration: none;
+  color: var(--color-text-secondary);
+  transition: 0.1s ease-in-out;
+}
+.footer a:hover {
+  color: var(--footer-hover);
+}
+
+
+#rainbow {
+  background: linear-gradient(
+    to right,
+    #e3e3ff,
+    #dff2fd,
+    #e2fce6,
+    #fcfade,
+    #ffeee2
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow_animation 3s infinite;
+  background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+  0%,
+  100% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 100% 0;
+  }
+}
