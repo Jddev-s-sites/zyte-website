@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Caveat");
+@import url("https://fonts.googleapis.com/css?family=Rock+Salt");
 body {
-  background-color: #15171a;
+  background-color: #0a0a0a;
   font-family: Arial;
-  color: pink;
+  color: #1db954;
   margin: 0;
 }
 
@@ -12,7 +12,7 @@ body {
   margin-top: 200px;
 }
 .cuteify {
-  font-family: Caveat;
+  font-family: Rock Salt, sans-serif;
 }
 
 .pfp {
@@ -53,7 +53,7 @@ body {
 button {
   width: 200px;
   height: 50px;
-  background-color: rgba(255, 192, 203, 0.781);
+  background-color: #1db954;
   border-radius: 4px;
   font-size: 30px;
   transition: 0.7s;
@@ -82,7 +82,7 @@ nav {
 }
 
 nav a {
-  color: white;
+  color: #1db954;
   text-decoration: none;
   list-style-type: none;
   font-size: 30px;
@@ -101,16 +101,16 @@ nav a:hover {
   width: 100%;
   padding: 10px 0;
   text-align: center;
-  background-color: #111214;
+  background-color: #0d0d0e;
   position: fixed;
   bottom: 0;
-  color: pink;
+  color: #1db954;
 }
 
 .footer a {
   list-style-type: none;
   text-decoration: none;
-  color: pink;
+  color: #1db954;
   transition: 0.7s;
 }
 
@@ -143,12 +143,29 @@ nav a:hover {
 }
 
 @media (max-width: 768px) {
+  .buttons {
+    padding-top: 10px;
+  }
+
+  button {
+    width: 200px;
+    height: auto;
+  }
   nav a {
     width: 100%;
     height: auto;
     font-size: 25px;
     display: inline;
   }
+
+  .title {
+    font-family: sans-serif;
+  }
+  .cuteify {
+    font-family: sans-serif;
+    display: inline;
+  }
+
   .pfp {
     width: 190px;
   }
@@ -157,6 +174,7 @@ nav a:hover {
     font-size: 9px;
     position: absolute;
     background-color: transparent;
+    margin-left: 40px;
     padding: 50px;
     padding-bottom: 3px;
   }
